@@ -3,374 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Piyush ❤️</title>
+<title>I'm Sorry ❤️</title>
 
 <style>
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Georgia, serif;
-  background: #fff4f1;
-  color: #5b3434;
-  overflow-x: hidden;
-}
-
-section {
-  width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 35px 25px;
+  align-items: center;
   text-align: center;
-}
-
-.hero {
-  background: linear-gradient(#f8ddd8, #fff4f1);
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
-  animation: fade 2s ease;
-}
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 25px;
-}
-
-.subtitle {
-  font-size: 18px;
-  opacity: .8;
-}
-
-.heart {
-  font-size: 55px;
-  animation: beat 1.3s infinite;
-  margin: 25px;
-}
-
-@keyframes beat {
-  50% { transform: scale(1.25); }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Photos */
-
-.memories {
-  background: #fffaf8;
-}
-
-.photo {
-  width: 80%;
-  max-width: 330px;
-  margin: 18px;
-  padding: 10px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px #d9b7b0;
-  transition: .4s;
-}
-
-.photo:hover {
-  transform: scale(1.04) rotate(-1deg);
-}
-
-.photo img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-/* Love letter */
-
-.letter {
-  background: #f6dfdb;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e0, #fff0f3);
 }
 
 .card {
-  max-width: 500px;
-  background: rgba(255,255,255,.7);
-  padding: 35px 25px;
-  border-radius: 25px;
-  line-height: 1.8;
-  box-shadow: 0 10px 30px rgba(90,40,40,.1);
+  z-index: 2;
+  background: rgba(255,255,255,0.75);
+  padding: 45px 35px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  animation: appear 1.2s ease;
 }
 
-/* Cake */
-
-.cake-section {
-  background: #fff6f3;
+.sorry {
+  font-size: 65px;
+  color: #ff477e;
+  animation: heartbeat 1.3s infinite;
 }
 
-.cake {
-  font-size: 120px;
+h2 {
+  margin-top: 15px;
+  color: #444;
 }
 
-.candle {
-  font-size: 50px;
-  cursor: pointer;
+p {
+  margin-top: 12px;
+  color: #777;
+  line-height: 1.6;
 }
 
 button {
   margin-top: 25px;
-  padding: 14px 28px;
   border: none;
+  padding: 13px 25px;
   border-radius: 30px;
-  background: #b85c65;
+  background: #ff477e;
   color: white;
   font-size: 17px;
   cursor: pointer;
+  transition: .3s;
 }
 
-/* Ending */
-
-.final {
-  background: linear-gradient(#f3d2cd, #b85c65);
-  color: white;
+button:hover {
+  transform: scale(1.08);
 }
 
-.final h1 {
-  font-size: 42px;
+.heart {
+  position: absolute;
+  bottom: -50px;
+  color: #ff477e;
+  animation: floatUp linear forwards;
 }
 
-/* Floating hearts */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
 
-.floating-heart {
-  position: fixed;
-  bottom: -30px;
-  font-size: 20px;
-  animation: floatUp 6s linear forwards;
-  pointer-events: none;
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes floatUp {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
   to {
-    transform: translateY(-110vh);
+    transform: translateY(-110vh) rotate(360deg);
     opacity: 0;
   }
-}
-
-@media(max-width:600px) {
-  h1 { font-size: 38px; }
-  h2 { font-size: 26px; }
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-
-<p class="subtitle">A tiny surprise for my favourite person...</p>
-
-<div class="heart">❤️</div>
-
-<h1>Happy Birthday,<br>Piyush ❤️</h1>
-
-<p class="subtitle">
-Today is all about you.
-</p>
-
-</section>
-
-
-<section class="memories">
-
-<h2>Some of my favourite memories 🫶</h2>
-
-<div class="photo">
-<img src="photo0.jpg">
-</div>
-
-<div class="photo">
-<img src="photo2.jpg">
-</div>
-
-<div class="photo">
-<img src="photo4.jpg">
-</div>
-
-</section>
-
-
-<section class="letter">
-
-<h2>A little something I wanted to tell you...</h2>
-
 <div class="card">
+  <div class="sorry">SORRY ❤️</div>
 
-<p>
-Happy Birthday, Piyush ❤️
-</p>
+  <h2>I really didn't mean to hurt you.</h2>
 
-<br>
+  <p>
+    I know a simple sorry can't fix everything,<br>
+    but you mean too much to me to let this stay unfixed. 🥺
+  </p>
 
-<p>
-You somehow make ordinary days feel a little warmer
-and the smallest moments feel worth remembering.
-</p>
-
-<br>
-
-<p>
-I hope this year brings you everything you've been
-working for, all the happiness you deserve,
-and countless reasons to smile.
-</p>
-
-<br>
-
-<p>
-And selfishly, I hope I get to be there
-for a lot of those smiles. 🫶
-</p>
-
-<br>
-
-<p>
-Thank you for being my comfort,
-my favourite person,
-and such a beautiful part of my life.
-</p>
-
+  <button onclick="forgive()">Tap if you forgive me 💗</button>
 </div>
-
-</section>
-
-
-<section class="cake-section">
-
-<h2>Okay birthday boy...</h2>
-
-<p>Make a wish ✨</p>
-
-<div class="cake">🎂</div>
-
-<div class="candle" id="candle">🔥</div>
-
-<button onclick="blowCandle()">
-Blow Out The Candle
-</button>
-
-<p id="wish" style="margin-top:25px;font-size:20px;"></p>
-
-</section>
-
-
-<section class="final">
-
-<div class="heart">❤️</div>
-
-<h1>Happy Birthday, Piyush.</h1>
-
-<br>
-
-<p style="font-size:21px;line-height:1.7;">
-Here's to you,<br>
-to us,<br>
-and to many more memories together.
-</p>
-
-<br>
-
-<h2>I love you ❤️</h2>
-
-<p>— Yours, khushi 🫶</p>
-
-</section>
-
 
 <script>
-
-/* Floating hearts */
-
 function createHeart() {
-
   const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
 
-  heart.className = "floating-heart";
-  heart.innerHTML = "♡";
-
-  heart.style.left =
-    Math.random() * 100 + "vw";
-
-  heart.style.fontSize =
-    (15 + Math.random() * 25) + "px";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (15 + Math.random() * 30) + "px";
+  heart.style.animationDuration = (3 + Math.random() * 4) + "s";
 
   document.body.appendChild(heart);
 
-  setTimeout(() => {
-    heart.remove();
-  }, 6000);
+  setTimeout(() => heart.remove(), 7000);
 }
 
-setInterval(createHeart, 500);
+setInterval(createHeart, 300);
 
+function forgive() {
+  document.querySelector(".card").innerHTML = `
+    <div class="sorry">YAY! ❤️</div>
+    <h2>Thank you for forgiving me 🥹</h2>
+    <p>I promise to make that smile worth protecting. 💕</p>
+  `;
 
-/* Candle */
-
-function blowCandle() {
-
-  document.getElementById("candle").innerHTML = "✨";
-
-  document.getElementById("wish").innerHTML =
-  "May every wish you just made come true ❤️";
-
-  createConfetti();
-}
-
-
-/* Confetti */
-
-function createConfetti() {
-
-  for(let i = 0; i < 80; i++) {
-
-    const confetti =
-      document.createElement("div");
-
-    confetti.innerHTML = "✨";
-
-    confetti.style.position = "fixed";
-
-    confetti.style.left =
-      Math.random() * 100 + "vw";
-
-    confetti.style.top =
-      Math.random() * 100 + "vh";
-
-    confetti.style.fontSize =
-      Math.random() * 20 + 10 + "px";
-
-    document.body.appendChild(confetti);
-
-    setTimeout(() => {
-      confetti.remove();
-    }, 2000);
-
+  for(let i = 0; i < 40; i++) {
+    setTimeout(createHeart, i * 50);
   }
 }
-
 </script>
 
 </body>
